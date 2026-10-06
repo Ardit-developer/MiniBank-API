@@ -6,10 +6,10 @@ public static class DbSeeder
 {
     public static async Task SeedAsync(MiniBankDbContext db)
     {
-        if (db.Customers.Any())
+
             return;
 
-        var customer = new Customer
+        Customer customer = new Customer
         {
             FirstName = "Demo",
             LastName = "Customer",
